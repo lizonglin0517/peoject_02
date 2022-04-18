@@ -1,0 +1,102 @@
+/* ----------xtx-entry：网站入口模块 */
+.xtx-entry{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.xtx-entry .container{
+    position: relative;
+    height: 500px;
+}
+
+/* --------banner:轮播图模块 */
+.xtx-entry .container .banner{
+    height: 500px;
+    overflow: hidden;
+}
+
+.xtx-entry .banner ul{
+    width: 200%;
+}
+
+.xtx-entry .banner li{
+    float: left;
+}
+
+.xtx-entry .banner .prev,
+.xtx-entry .banner .next{
+    position: absolute;
+    top: 228px;
+    left: 260px;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 0, 0, .2) url('../images/sprites.png') 14px -60px;
+    border-radius: 50%;
+}
+
+.xtx-entry .banner .next{
+    left: 1185px;
+    background-position: -23px -60px; 
+}
+
+.xtx-entry .indicator{
+    position: absolute;
+    left: 672px;
+    bottom: 31px;
+}
+
+.xtx-entry .indicator li{
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 50%;
+}
+
+.xtx-entry .indicator li.active{
+    background-color: #fff;
+}
+
+/* ----------category：侧边栏模块 */
+.xtx-entry .category{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.xtx-entry .category li{
+    position: relative;
+    height: 50px;
+    padding-left: 36px;
+    line-height: 50px;
+}
+
+.xtx-entry .category a{
+    color: #fff;
+    margin-right: 15px;
+}
+
+.xtx-entry .category a::after{
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    width: 6px;
+    height: 11px;
+    background: url('../images/sprites.png') -40px -111px;
+}
+
+.xtx-entry .category span{
+    font-size: 14px;
+}
+
+.xtx-entry .category span:first-child{
+    margin-left: 15px;
+}
+
+.xtx-entry .category li:hover{
+    background-color: #20987e;
+}
